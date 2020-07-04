@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<title>{{ the_title }}</title>
+
+
+ <div class="row">
+			        <div style="text-align:center;margin-left:500px;">
+			        <div class="col-sm-12">
+			           <h1>Carbon Offset (# of trees) for Different Countries</h1>
+			        </div>
+			       </div>
+		   </div>
+        <hr/>
+
+
+
+
+
+<ul>
+
+			 <div class="row">
+				  	        <div class="col-sm-6">
+
+				  	            <div class="img" id="global">
+
+
+				  	                  <code>
+				  	                  <a href="{{ base_url }}plots/routeto_carbon_offset">
+				  	                      Zoom In to see plot clearer
+				  	                      </a>
+
+
+
+				  	                  </code>
+				  	            </div>
+
+				  	        </div>
+
+			         </div>
+
+
+
+			<div class="row">
+							  	        <div class="col-sm-6">
+							  	            <h4>Bar Graph</h4>
+							  	            <div class="img" id="global"><img class="img-fluid"
+							  	                                  src="{{ base_url }}plots/routeto_carbon_offset"></div>
+
+							  	        </div>
+
+						         </div>
+
+
+
+	                                <div class="row">
+							  	        <div class="col-sm-6">
+
+									<table>
+
+  										<tr>
+    									  <th>Country</th>
+    									  <th>Number of trees</th>
+  										</tr>
+  											<tr>
+    											<td>World</td>
+    											<td>5 billion</td>
+  											</tr>
+  											<tr>
+    											<td>India</td>
+   												 <td>156 million</td>
+  											</tr>
+  											<tr>
+											    <td>China</td>
+											   	<td>584 million</td>
+  											</tr>
+  											<tr>
+												<td>United Kingdom</td>
+												<td>105 million</td>
+  											</tr>
+  											<tr>
+												<td>United States</td>
+												<td>995 million</td>
+  											</tr>
+  											<tr>
+												<td>Nigeria</td>
+												<td>18 million</td>
+  											</tr>
+  											<tr>
+												<td>Brazil</td>
+												<td>49 million</td>
+  											</tr>
+  											<tr>
+												<td>Australia</td>
+												<td>58 million</td>
+  											</tr>
+  											<tr>
+												<td>Japan</td>
+												<td>157 million</td>
+  											</tr>
+  											<tr>
+												<td>Germany</td>
+												<td>132 million</td>
+  											</tr>
+
+										</table>
+
+							  	        </div>
+
+						         </div>
+
+
+
+
+
+  <li><a href="{{ url_for('index') }}">Home page</a></li>
+</ul>
+
+
+
+
+{% endblock %}

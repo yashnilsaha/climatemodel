@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- to be filled by the Python script -->
+
+
+<!-- note how items from the "static" folder are linked -->
+<!--<img alt="Photo: Carbon Foot Print" src="{{ url_for('static', filename='images/carbonfootprint.png') }}">-->
+
+<div class="container" style="margin-top:30px">
+  <div class="row text-center">
+        <div class="col-sm-12">
+            <h1> Climate Model Analysis </h1>
+        </div>
+    </div>
+
+</div>
+
+<ul>
+  <!-- note how items from routes in the the Python script are linked -->
+  <li><a href="{{ url_for('temp') }}"> Temperature Anomaly Analysis</a></li>
+  <li><a href="{{ url_for('carbon') }}"> Carbon Dioxide Emission Analysis</a></li>
+  <li><a href="{{ url_for('carbon_offset') }}"> Carbon Offset</a></li>
+</ul>
+
+
+
+
+{% endblock %}
